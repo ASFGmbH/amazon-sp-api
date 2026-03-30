@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>{{document_title}}</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.45;
+            color: #111;
+            margin: 32px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0 0 18px;
+            line-height: 1.25;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 22px 0 8px;
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
+
+        ul {
+            margin: 8px 0 10px 20px;
+            padding: 0;
+        }
+
+        li {
+            margin: 0 0 6px;
+        }
+
+        .meta {
+            margin-bottom: 16px;
+        }
+
+        .meta strong {
+            display: inline-block;
+            min-width: 220px;
+        }
+
+        .small {
+            color: #444;
+            font-size: 12px;
+        }
+
+        .page-break {
+            page-break-before: always;
+            break-before: page;
+            border: 0;
+            margin: 34px 0 0;
+        }
+    </style>
+</head>
+<body>
+<h1>{{document_title}}</h1>
+
+<h2>Hersteller / Verantwortlicher Wirtschaftsakteur</h2>
+<p>
+    <strong>{{manufacturer_line_1}}</strong><br>
+    {{manufacturer_line_2}}<br>
+    Kontaktperson: {{manufacturer_contact_person}}<br>
+    E-Mail: {{manufacturer_email}}<br>
+    Telefon: {{manufacturer_phone}}<br>
+    Website: {{manufacturer_website}}
+</p>
+
+<h2>Produktinformationen</h2>
+<div class="meta">
+    <p><strong>Produktname:</strong> {{product_name}}</p>
+    <p><strong>Modell / Artikelreferenz:</strong> {{model_reference}}</p>
+    <p><strong>Artikelnummer:</strong> {{article_reference}}</p>
+    <p><strong>Material:</strong> {{material}}</p>
+    <p><strong>Verwendung:</strong> {{usage}}</p>
+    <p><strong>Gültigkeit:</strong> {{validity_scope}}</p>
+</div>
+
+<h2>Bestimmungsgemäße Verwendung</h2>
+<p>{{intended_use}}</p>
+
+<h2>Sicherheits- und Warnhinweise</h2>
+<ul>
+    {{gpsr_warnings_html}}
+</ul>
+
+<h2>Pflegehinweise</h2>
+<ul>
+    {{care_html}}
+</ul>
+
+<h2>Ort, Datum, Name, Unterschrift</h2>
+<p>{{signature_line}}</p>
+
+<p class="small">Dieses Dokument wurde für das Modell {{model_reference}} erzeugt und gilt für alle Größenvarianten.</p>
+
+<hr class="page-break">
+
+<h1>{{reach_title}}</h1>
+
+<h2>Angaben zum Unternehmen</h2>
+<div class="meta">
+    <p><strong>Firma:</strong> {{reach_company_name}}</p>
+    <p><strong>Adresse:</strong> {{reach_company_address}}</p>
+    <p><strong>Kontaktperson:</strong> {{reach_contact_person}}</p>
+    <p><strong>E-Mail:</strong> {{reach_email}}</p>
+    <p><strong>Telefon:</strong> {{reach_phone}}</p>
+</div>
+
+<h2>Produktinformationen</h2>
+<div class="meta">
+    <p><strong>Produktname:</strong> {{reach_product_name}}</p>
+    <p><strong>Produktbezeichnung:</strong> {{reach_product_full_name}}</p>
+    <p><strong>Artikelnummer:</strong> {{reach_article_reference}}</p>
+    <p><strong>Materialbeschreibung:</strong> {{reach_material_description}}</p>
+</div>
+
+<h2>Erklärung zur REACH-Konformität</h2>
+<p>{{reach_declaration_intro}}</p>
+<ul>
+    {{reach_points_html}}
+</ul>
+
+<h2>Ort, Datum, Name, Unterschrift</h2>
+<p>{{signature_line}}</p>
+
+<p class="small">Dieses Dokument wurde für das Modell {{model_reference}} erzeugt und gilt für alle Größenvarianten.</p>
+</body>
+</html>
