@@ -1,6 +1,6 @@
 # Media Verzeichnis
 
-## basics gibt die grundlegenden Bilder für alle Modelle vor
+## basic gibt die grundlegenden Bilder für alle Modelle vor
 
 ### Damit ein Model erkannt wird
 
