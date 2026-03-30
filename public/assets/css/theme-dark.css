@@ -1,0 +1,153 @@
+/* ================================
+   GLOBAL DARK BACKGROUND
+================================ */
+
+body {
+    background: radial-gradient(circle at 20% 20%, #1f1f2e, #0f0f14 70%);
+    color: #eaeaea;
+    min-height: 100vh;
+}
+
+/* ================================
+   GLASS CARD
+================================ */
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ================================
+   CARD HEADER
+================================ */
+
+.card-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ================================
+   CARD FOOTER
+================================ */
+
+.card-footer {
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ================================
+   IMAGES
+================================ */
+
+.card-img-top {
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.thumb {
+    height: 50px;
+    margin-right: 5px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    opacity: 0.8;
+}
+
+.thumb:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.btn-primary {
+    background: linear-gradient(135deg, #5f9cff, #7a5fff);
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 20px rgba(122, 95, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #aaa;
+}
+
+/* ================================
+   BADGES
+================================ */
+
+.badge {
+    border-radius: 8px;
+    font-size: 0.7rem;
+    padding: 6px 8px;
+    font-weight: 500;
+}
+
+.bg-success {
+    background: linear-gradient(135deg, #1dd1a1, #10ac84) !important;
+}
+
+.bg-danger {
+    background: linear-gradient(135deg, #ff6b6b, #ee5253) !important;
+}
+
+/* ================================
+   STOCK INFO TEXT
+================================ */
+
+.stock-info strong {
+    color: #9aa4ff;
+}
+
+.stock-info span {
+    font-size: 0.8rem;
+}
+
+/* ================================
+   TOAST
+================================ */
+
+.toast {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* ================================
+   DARK TOOLTIP
+================================ */
+
+.tooltip-inner {
+    background: rgba(20, 20, 30, 0.95);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 0.75rem;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: rgba(20, 20, 30, 0.95);
+}
+
+h5 {
+    color: white;
+}
